@@ -20,7 +20,7 @@ default: &default
 
 development:
   <<: *default
-  database: articles
+  database: data
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -30,7 +30,7 @@ development:
 
 production:
   adapter: postgresql
-  database: articles
+  database: data
   pool: 5
   timeout: 5000
 test:
